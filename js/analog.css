@@ -1,0 +1,379 @@
+:root {
+  --font: "Poppins", sans-serif;
+}
+* {
+  font-family: var(--font);
+}
+body {
+  background-color: #bdc3c7;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgb(78, 78, 155);
+  position: relative;
+}
+.clock::before {
+  content: "";
+  background-color: rgb(78, 78, 155);
+
+  position: absolute;
+  z-index: 2;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.clock .c1 {
+  content: "";
+  position: absolute;
+  border: 1px solid black;
+  width: 92%;
+  height: 92%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.clock .c2 {
+  content: "";
+  position: absolute;
+  background-color: azure;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+.c2::after {
+  content: "Clock";
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+.c2::before {
+  content: "SSweb";
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translate(-50%, -50%);
+}
+.c {
+  --rotate: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%);
+  transform: rotate(calc(var(--rotate) * 1deg));
+  border-radius: 5px;
+}
+.n1 {
+  width: 4px;
+  height: 25%;
+  background-color: rgb(83, 79, 79);
+  transform-origin: bottom;
+}
+.n2 {
+  width: 4px;
+  height: 40%;
+  background-color: rgb(83, 79, 79);
+
+  transform-origin: bottom;
+}
+.n3 {
+  width: 2px;
+  height: 40%;
+  background-color: rgb(221, 51, 51);
+
+  transform-origin: bottom;
+}
+
+.n3::before {
+  content: "";
+  width: 2px;
+  height: 15%;
+  background-color: rgb(221, 51, 51);
+  position: absolute;
+  bottom: -25px;
+}
+
+.n {
+  position: absolute;
+  top: 0px;
+  left: 49%;
+  transform: translateX(-50%);
+  height: 50%;
+
+  width: 5px;
+  transform-origin: bottom;
+}
+
+.n::before {
+  content: "";
+  position: absolute;
+
+  top: 5px;
+  transform: translateX(-50%);
+}
+.n::after {
+  content: "";
+  top: 4px;
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 1px;
+}
+.n:nth-child(1) {
+  transform: rotate(0deg);
+}
+.n:nth-child(2) {
+  transform: rotate(6deg);
+}
+.n:nth-child(3) {
+  transform: rotate(12deg);
+}
+.n:nth-child(4) {
+  transform: rotate(18deg);
+}
+.n:nth-child(5) {
+  transform: rotate(24deg);
+}
+.n:nth-child(6) {
+  transform: rotate(30deg);
+}
+.n:nth-child(7) {
+  transform: rotate(36deg);
+}
+.n:nth-child(8) {
+  transform: rotate(42deg);
+}
+.n:nth-child(9) {
+  transform: rotate(48deg);
+}
+.n:nth-child(10) {
+  transform: rotate(54deg);
+}
+.n:nth-child(11) {
+  transform: rotate(60deg);
+}
+.n:nth-child(12) {
+  transform: rotate(66deg);
+}
+.n:nth-child(13) {
+  transform: rotate(72deg);
+}
+.n:nth-child(14) {
+  transform: rotate(78deg);
+}
+.n:nth-child(15) {
+  transform: rotate(84deg);
+}
+.n:nth-child(16) {
+  transform: rotate(90deg);
+}
+.n:nth-child(17) {
+  transform: rotate(96deg);
+}
+.n:nth-child(18) {
+  transform: rotate(102deg);
+}
+.n:nth-child(19) {
+  transform: rotate(108deg);
+}
+.n:nth-child(20) {
+  transform: rotate(114deg);
+}
+.n:nth-child(21) {
+  transform: rotate(120deg);
+}
+.n:nth-child(22) {
+  transform: rotate(126deg);
+}
+.n:nth-child(23) {
+  transform: rotate(132deg);
+}
+.n:nth-child(24) {
+  transform: rotate(138deg);
+}
+.n:nth-child(25) {
+  transform: rotate(144deg);
+}
+.n:nth-child(26) {
+  transform: rotate(150deg);
+}
+.n:nth-child(27) {
+  transform: rotate(156deg);
+}
+.n:nth-child(28) {
+  transform: rotate(162deg);
+}
+.n:nth-child(29) {
+  transform: rotate(168deg);
+}
+.n:nth-child(30) {
+  transform: rotate(174deg);
+}
+.n:nth-child(31) {
+  transform: rotate(180deg);
+}
+.n:nth-child(32) {
+  transform: rotate(186deg);
+}
+.n:nth-child(33) {
+  transform: rotate(192deg);
+}
+.n:nth-child(34) {
+  transform: rotate(198deg);
+}
+.n:nth-child(35) {
+  transform: rotate(204deg);
+}
+.n:nth-child(36) {
+  transform: rotate(210deg);
+}
+.n:nth-child(37) {
+  transform: rotate(216deg);
+}
+.n:nth-child(38) {
+  transform: rotate(222deg);
+}
+.n:nth-child(39) {
+  transform: rotate(228deg);
+}
+.num .n:nth-child(40) {
+  transform: rotate(234deg);
+}
+.n:nth-child(41) {
+  transform: rotate(240deg);
+}
+.n:nth-child(42) {
+  transform: rotate(246deg);
+}
+.n:nth-child(43) {
+  transform: rotate(252deg);
+}
+.n:nth-child(44) {
+  transform: rotate(258deg);
+}
+.n:nth-child(45) {
+  transform: rotate(264deg);
+}
+.n:nth-child(46) {
+  transform: rotate(270deg);
+}
+.n:nth-child(47) {
+  transform: rotate(276deg);
+}
+.n:nth-child(48) {
+  transform: rotate(282deg);
+}
+.n:nth-child(49) {
+  transform: rotate(288deg);
+}
+.n:nth-child(50) {
+  transform: rotate(294deg);
+}
+.n:nth-child(51) {
+  transform: rotate(300deg);
+}
+.n:nth-child(52) {
+  transform: rotate(306deg);
+}
+.n:nth-child(53) {
+  transform: rotate(312deg);
+}
+.n:nth-child(54) {
+  transform: rotate(318deg);
+}
+.n:nth-child(55) {
+  transform: rotate(324deg);
+}
+.n:nth-child(56) {
+  transform: rotate(330deg);
+}
+.n:nth-child(57) {
+  transform: rotate(336deg);
+}
+.n:nth-child(58) {
+  transform: rotate(342deg);
+}
+.n:nth-child(59) {
+  transform: rotate(348deg);
+}
+.n:nth-child(60) {
+  transform: rotate(354deg);
+}
+
+.n:nth-child(1)::before {
+  content: "12";
+  transform: rotateY(-0deg);
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.n:nth-child(6)::before {
+  content: "1";
+  transform: rotate(-30deg);
+}
+.n:nth-child(11)::before {
+  content: "2";
+  transform: rotate(-60deg);
+}
+.n:nth-child(16)::before {
+  content: "3";
+  transform: rotate(-90deg);
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.n:nth-child(21)::before {
+  content: "4";
+  transform: rotate(-120deg);
+}
+.n:nth-child(26)::before {
+  content: "5";
+  transform: rotate(-150deg);
+}
+.n:nth-child(31)::before {
+  content: "6";
+  transform: rotate(-180deg);
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.n:nth-child(36)::before {
+  content: "7";
+  transform: rotate(-210deg);
+}
+.n:nth-child(41)::before {
+  content: "8";
+  transform: rotate(-240deg);
+}
+.n:nth-child(46)::before {
+  content: "9";
+  transform: rotate(-270deg);
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.n:nth-child(51)::before {
+  content: "10";
+  transform: rotate(-300deg);
+}
+.n:nth-child(56)::before {
+  content: "11";
+  transform: rotate(-330deg);
+}
+.n:nth-child(5n + 1)::after {
+  background-color: red;
+}

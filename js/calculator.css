@@ -1,0 +1,124 @@
+:root {
+  --font: "Poppins", sans-serif;
+}
+* {
+  font-family: var(--font);
+}
+body {
+  background-color: grey;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.header {
+  width: 320px;
+  height: 380px;
+  background-color: #353b48;
+  border-radius: 20px;
+  box-shadow: 5px 5px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.head {
+  color: orange;
+}
+.screen {
+  width: 90%;
+  background-color: rgb(211, 218, 224);
+  display: flex;
+  justify-content: flex-end;
+  height: 10%;
+  font-size: 1.5rem;
+  padding-right: 10px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+.but {
+  width: 90%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+.bc {
+  width: 3rem;
+  background-color: rgb(215, 223, 230);
+  border-radius: 10%;
+  height: 1.5rem;
+
+  text-align: center;
+}
+.b1 {
+  margin-right: 5px;
+}
+.b2 {
+  background-color: rgb(241, 118, 74);
+}
+.w {
+  width: 90%;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.num span {
+  width: 3rem;
+  background-color: rgb(215, 223, 230);
+  border-radius: 10%;
+  height: 2rem;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 2rem;
+}
+.num {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.cal span {
+  width: 3rem;
+  background-color: rgb(215, 223, 230);
+  border-radius: 10%;
+  height: 2rem;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.cal {
+  width: 20%;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.num span:last-of-type {
+  background-color: rgb(233, 106, 106);
+  color: aliceblue;
+}
+span {
+  box-shadow: 2px 2px gray;
+}
+span:hover {
+  background-color: white;
+  box-shadow: none;
+  transition: 0.3s;
+}
+span:active {
+  box-shadow: none;
+  transition: 0.3s;
+}

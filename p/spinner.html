@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spinner</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        color: aqua;
+        font-family: monospace;
+        font-size: 18px;
+        font-variant: small-caps;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .b1 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border-top: 2px solid whitesmoke;
+        border-bottom: 2px solid whitesmoke;
+        border-right: 2px solid transparent;
+        border-left: 2px solid transparent;
+        animation: bg 3s ease-in-out alternate infinite;
+      }
+      @keyframes bg {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(90deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Spinner</h1>
+    <div class="b1"></div>
+  </body>
+</html>

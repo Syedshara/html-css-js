@@ -1,0 +1,41 @@
+body::before {
+  content: "xs";
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: black;
+}
+
+@media (min-width: 576px) {
+  body::before {
+    content: "SM";
+  }
+}
+@media (min-width: 768px) {
+  body::before {
+    content: "md";
+  }
+}
+@media (min-width: 992px) {
+  body::before {
+    content: "lg";
+  }
+}
+@media (min-width: 1200px) {
+  body::before {
+    content: "xl";
+  }
+}
+@media (min-width: 1400px) {
+  body::before {
+    content: "xxl";
+  }
+}
+.b1 {
+  margin-top: 100px;
+}
+.sample1 {
+  background-color: aqua;
+  height: 70px;
+  border: 2px solid black;
+}

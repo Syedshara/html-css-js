@@ -1,0 +1,154 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  width: 90vw;
+  min-width: 98vh;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.header {
+  display: flex;
+  width: 90vw;
+  height: 50px;
+  margin: auto;
+  margin-top: 20px;
+
+  justify-content: space-between;
+}
+.alogo {
+  padding: 10px;
+  width: 80px;
+  height: 50px;
+  order: 2;
+}
+.logo {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+}
+
+.body {
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+.b1 {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: red;
+}
+.b2 {
+  font-size: 13px;
+  color: rgb(56, 54, 54);
+  margin: 0px 20px;
+}
+
+.form1 {
+  display: flex;
+  margin-top: 30px;
+  font-size: 15px;
+  justify-content: space-evenly;
+  color: black;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+.main {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 2px solid grey;
+  padding-bottom: 20px;
+}
+.m1 {
+  display: inline;
+  font-size: 13px;
+  font-weight: 600;
+}
+.m1 label {
+  padding-left: 10px;
+}
+.m2 {
+  color: red;
+  font-style: italic;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+.table {
+  margin: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  font-weight: 600;
+  display: grid;
+  justify-content: center;
+}
+.bt,
+.btn {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: rgb(187, 37, 37);
+  color: white;
+  padding: 0px;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+input[type="submit"]:hover {
+  background-color: red;
+  color: azure;
+}
+.form2 input {
+  width: 500px;
+  height: 40px;
+  border: none;
+  border: 2px solid rgb(57, 55, 55);
+  font-size: 15px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  outline: none;
+  display: inline;
+}
+
+.form2 label,
+.form2 select {
+  margin-right: 60px;
+  display: inline-block;
+  width: 200px;
+  font-size: 16px;
+
+  width: 250px;
+}
+
+.form2 input:focus {
+  border: 2px solid red;
+  transition: 0.4s;
+}
+.form2 input:valid {
+  border: 2px solid green;
+  transition: 0.4s;
+}
+.form2 {
+  margin-left: 30px;
+  margin-top: 20px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.foot {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}

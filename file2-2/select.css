@@ -1,0 +1,200 @@
+* {
+  /*universal selector*/
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --color: #5da3fa;
+  --font: "Poppins", sans-serif;
+}
+::selection {
+  background: purple;
+}
+body {
+  /* element selector*/
+  width: 100vw;
+  height: 100vh;
+
+  background-repeat: no-repeat;
+  background-image: url("https://images.unsplash.com/photo-1683439367592-c95d3b4adf54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+  transition: scroll-behavior 1s ease-in-out;
+}
+.header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .h1 {
+  /*grouping selector and class selector*/
+  width: 40%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header .h1 h3 {
+  font-size: 2rem;
+  color: var(--color);
+  font-family: "Poppins", sans-serif;
+}
+.header .h1 form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .h1 form .l1 label:first-child::first-letter {
+  text-transform: uppercase;
+}
+.header .h1 form > .l1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.header .h1 form .l1 label {
+  color: aliceblue;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  width: 20%;
+  font-family: "Poppins", sans-serif;
+}
+
+.header .h1 form .l1 input:focus {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+.header .h1 form .l1 input {
+  width: 60%;
+  height: 40px;
+  border: 1px solid #5da3fa;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: aliceblue;
+  padding-left: 20px;
+}
+
+.header .h1 form .l1 + .foot {
+  margin-top: 20px;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .h1 form .foot .link a,
+.header .h1 form .foot .next a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  color: #5da3fa;
+  font-weight: 700;
+  display: block;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+}
+.header .h1 form .foot .next a {
+  border: none;
+  background-color: transparent;
+  width: 100px;
+  height: 40px;
+  text-decoration: none;
+}
+
+.header .h1 form .foot .link a:hover,
+.header .h1 form .foot .link a:active,
+.header .h1 form .foot .next a:hover {
+  outline: 1px solid #5da3fa;
+  color: aliceblue;
+}
+.header .h1 form .foot .link a:link,
+.header .h1 form .foot .link a:visited {
+  color: #044ca4;
+}
+.footer {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+.f1 {
+  margin: 40px;
+  margin-top: 40px;
+
+  color: var(--color);
+  font-family: var(--font);
+  font-size: 2.5rem;
+}
+.f1 + h2 {
+  /* adjacent siblings*/
+  margin: 10px;
+
+  color: grey;
+  font-family: var(--font);
+  font-size: 1rem;
+}
+.f1 ~ h2 {
+  /*general siblings selector*/
+
+  margin: 40px;
+  color: aliceblue;
+  font-family: var(--font);
+  font-size: 1rem;
+}
+.f1::before {
+  content: url(like.png);
+}
+.f1::after {
+  content: url(like.png);
+}
+.p {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: var(--font);
+}
+/*descendant selector*/
+.p .img {
+  position: absolute;
+  top: -300px;
+  z-index: -9;
+}
+.p .img img {
+  width: 70%;
+  height: 700px;
+  left: 15%;
+}
+/*child selector (>)*/
+
+.p > p {
+  color: aliceblue;
+  font-size: 1.3rem;
+}
+.p p::first-line {
+  font-style: italic;
+}
+.footer div:nth-child(1) {
+  font-style: italic;
+}
